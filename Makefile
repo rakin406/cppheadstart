@@ -2,9 +2,9 @@
 CXX=clang++
 
 # Flags
-CXXFLAGS=-std=c++14 -pipe -Wall -Wextra -Wshadow -Wfloat-equal -Wconversion \
+CXXFLAGS=-std=c++17 -pipe -Wall -Wextra -Wshadow -Wfloat-equal -Wconversion \
 		 -pedantic -Wformat=2 -fdiagnostics-color=always
-DEBUG=-O0 -g -D_GLIBCXX_ASSERTIONS -fstack-clash-protection \
+DEBUG=-O0 -g -D_GLIBCXX_ASSERTIONS -ftrapv -fstack-clash-protection \
 	  -fstack-protector-strong -fstack-protector-all
 RELEASE=-O3
 
