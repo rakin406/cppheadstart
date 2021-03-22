@@ -1,8 +1,8 @@
 CXX=clang++
 
 # Flags
-CXXFLAGS=-std=c++17 -Wall -Wextra -Werror -Wformat-security -Wundef \
-				 -Wconversion -Wpedantic -Wformat=2 -fdiagnostics-color=always
+CXXFLAGS=-std=c++17 -Wall -Wextra -Wformat-security -Wundef -Wconversion \
+				 -Wpedantic -Wformat=2 -fdiagnostics-color=always
 DEBUG=-O0 -g3 -ftrapv -fstack-clash-protection -fstack-protector-all \
 			-fasynchronous-unwind-tables
 RELEASE=-O2 -fdelete-null-pointer-checks
