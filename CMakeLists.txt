@@ -15,7 +15,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fdelete-null-pointer-checks")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(main main.cpp)
+add_executable(main src/main.cpp)
 
 # Warning flags
 target_compile_options(main PRIVATE
